@@ -16,12 +16,13 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
     @IBOutlet weak var commentButton: UIButton!
+    @IBOutlet weak var commentLabel: UILabel!
     
-       override func awakeFromNib() {
+    
+    override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -42,6 +43,8 @@ class PostTableViewCell: UITableViewCell {
         let dateString:String = formatter.string(from: postData.date! as Date)
         self.dateLabel.text = dateString
         
+        
+    
         if postData.isLiked {
             let buttonImage = UIImage(named: "like_exist")
             self.likeButton.setImage(buttonImage, for: UIControlState.normal)
@@ -49,6 +52,19 @@ class PostTableViewCell: UITableViewCell {
             let buttonImage = UIImage(named: "like_none")
             self.likeButton.setImage(buttonImage, for: UIControlState.normal)
         }
+    
+        var commentText: String = ""
+    
+        for comment in postData.comments{
+    
+            commentText += comment["name"]!
+            commentText += ": "
+            commentText += comment["comment"]!
+            commentText += "\n"
     }
     
+        self.commentLabel.text = commentText
+    }
 }
+
+

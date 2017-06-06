@@ -137,7 +137,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func handleCommentButton(sender: UIButton, event:UIEvent) {
       
         let storyboard: UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
-         let next: CommentViewController = storyboard.instantiateViewController(withIdentifier: "comment")
+        let next: CommentViewController = storyboard.instantiateViewController(withIdentifier: "comment")
             as! CommentViewController
        
         
