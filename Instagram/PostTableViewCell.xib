@@ -47,12 +47,12 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tk3-lW-NAv">
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tk3-lW-NAv">
                         <constraints>
                             <constraint firstAttribute="height" constant="42" id="Ah7-WD-vit"/>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="WKX-pz-bBr"/>
+                            <constraint firstAttribute="width" constant="42" id="Ly9-cE-qmu"/>
                         </constraints>
-                        <state key="normal" title="コメント">
+                        <state key="normal" image="comment">
                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
@@ -100,6 +100,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="comment" width="42" height="42"/>
         <image name="like_none" width="40" height="40"/>
     </resources>
 </document>
