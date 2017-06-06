@@ -43,8 +43,6 @@ class PostTableViewCell: UITableViewCell {
         let dateString:String = formatter.string(from: postData.date! as Date)
         self.dateLabel.text = dateString
         
-        
-    
         if postData.isLiked {
             let buttonImage = UIImage(named: "like_exist")
             self.likeButton.setImage(buttonImage, for: UIControlState.normal)

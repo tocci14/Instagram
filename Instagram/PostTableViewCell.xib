@@ -22,7 +22,7 @@
                             <constraint firstAttribute="width" secondItem="ecU-iH-iby" secondAttribute="height" multiplier="1:1" id="jHz-jE-bNO"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZL-oc-CGX">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="247" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZL-oc-CGX">
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -39,24 +39,24 @@
                         </constraints>
                         <state key="normal" title="Button" image="like_none"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q24-Sg-Dzs">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q24-Sg-Dzs">
                         <constraints>
-                            <constraint firstAttribute="width" constant="40" id="IBc-o9-kYo"/>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="uC1-d3-aMe"/>
+                            <constraint firstAttribute="width" constant="20" id="SNt-wF-ICz"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tk3-lW-NAv">
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tk3-lW-NAv">
                         <constraints>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="JBi-CA-Lle"/>
+                            <constraint firstAttribute="height" constant="42" id="Ah7-WD-vit"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="WKX-pz-bBr"/>
                         </constraints>
                         <state key="normal" title="コメント">
                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9d-zX-Xb7">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9d-zX-Xb7">
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -70,6 +70,7 @@
                     <constraint firstAttribute="trailingMargin" secondItem="ecU-iH-iby" secondAttribute="trailing" id="EWv-xi-Fea"/>
                     <constraint firstAttribute="trailingMargin" secondItem="lHr-vA-n3L" secondAttribute="trailing" constant="10" id="HsZ-V3-snA"/>
                     <constraint firstItem="ecU-iH-iby" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Ier-JP-wc4"/>
+                    <constraint firstItem="Tk3-lW-NAv" firstAttribute="top" secondItem="ecU-iH-iby" secondAttribute="bottom" constant="10" id="KR8-vO-VIe"/>
                     <constraint firstAttribute="trailingMargin" secondItem="F9d-zX-Xb7" secondAttribute="trailing" constant="10" id="M0B-c8-IS1"/>
                     <constraint firstAttribute="trailingMargin" secondItem="pZL-oc-CGX" secondAttribute="trailing" constant="10" id="SdV-Sv-nQs"/>
                     <constraint firstItem="ecU-iH-iby" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="WVG-5K-29g"/>
@@ -83,7 +84,6 @@
                     <constraint firstItem="Tk3-lW-NAv" firstAttribute="leading" secondItem="Q24-Sg-Dzs" secondAttribute="trailing" constant="10" id="sLi-zo-oaU"/>
                     <constraint firstItem="WP9-Un-hiD" firstAttribute="top" secondItem="ecU-iH-iby" secondAttribute="bottom" constant="10" id="sbX-f6-nh3"/>
                     <constraint firstItem="WP9-Un-hiD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="sen-u4-mMI"/>
-                    <constraint firstItem="Tk3-lW-NAv" firstAttribute="top" secondItem="ecU-iH-iby" secondAttribute="bottom" constant="15" id="u9C-rq-hgz"/>
                     <constraint firstAttribute="bottomMargin" secondItem="F9d-zX-Xb7" secondAttribute="bottom" constant="10" id="weX-SX-boA"/>
                 </constraints>
             </tableViewCellContentView>
